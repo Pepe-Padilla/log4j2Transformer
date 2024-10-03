@@ -9,6 +9,7 @@ function calculate(){
         console.error("empty fileL4j");
         return;
     }
+
     appenders = [];
     for(let append of l4j.configuration.appender) {
         console.log(append);
@@ -51,6 +52,7 @@ function calculate(){
         roots.push(`      <AppenderRef ref="${rRef}" level="${rLevel}"/>`);
     }
 
+    //resultado final
     restult=[];
     restult.push('<?xml version="1.0" encoding="UTF-8"?>');
     restult.push('<Configuration status="WARN">');

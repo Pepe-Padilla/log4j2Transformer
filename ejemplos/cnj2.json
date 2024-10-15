@@ -1,0 +1,792 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/tomacartera.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C](%F:%M) - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESTOMACARTERA",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/rating.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESRATING",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/csvExperian.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCSVEXPERIAN",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/csvFactorRiesgo.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCSVFACTORESRIESGO",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/cesnetj2ee_scoringJsonAdapter.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "SCORINGJSONADAPTER",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/generacionFicheros.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C](%F:%M) - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESGENFICHERO",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/arquitectura.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C](%F:%M) - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEARQUITEC",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/scoring.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d{dd-MMM-yyyy HH:mm:ss--} %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCORING",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/logExperian.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C](%F:%M) - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESEXPERIAN",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/logDiccionarioUnico.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d{dd-MMM-yyyy HH:mm:ss--} %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESUNICO",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/logDiccionarioCertificacion.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d{dd-MMM-yyyy HH:mm:ss--} %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCERTIFICACION",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/axis.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "MaxFileSize",
+						"_value": "1024KB"
+					},
+					{
+						"_name": "MaxBackupIndex",
+						"_value": "10"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C](%F:%M) - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "AXIS",
+				"_class": "org.apache.log4j.RollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/catalina.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "MaxFileSize",
+						"_value": "1024KB"
+					},
+					{
+						"_name": "MaxBackupIndex",
+						"_value": "10"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C](%F:%M) - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "CATALINA",
+				"_class": "org.apache.log4j.RollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/jasper.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d{dd-MMM-yyyy HH:mm:ss--} %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "JASPER",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/cesnetJ2EECas.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCAS",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			},
+			{
+				"param": [
+					{
+						"_name": "Threshold",
+						"_value": "ALL"
+					},
+					{
+						"_name": "File",
+						"_value": "${catalina.home}/logs/SisnetLoginweb.log"
+					},
+					{
+						"_name": "Append",
+						"_value": "true"
+					},
+					{
+						"_name": "ImmediateFlush",
+						"_value": "true"
+					},
+					{
+						"_name": "DatePattern",
+						"_value": "yyyy-MM-dd"
+					}
+				],
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "ACCESOSISNET",
+				"_class": "org.apache.log4j.DailyRollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEARQUITEC"
+				},
+				"_name": "com.cesce",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "com.cesce.cover.scoring.controller.util",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "com.cesce.serasa",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "com.cesce.arquitectura.adapter.ediwin",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "com.cesce.sds",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "LOG_SCORING",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "com.cesce.general.identificacion.controller.util",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESEXPERIAN"
+				},
+				"_name": "com.experian",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCORING"
+				},
+				"_name": "com.cesce.standalone.util",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESTOMACARTERA"
+				},
+				"_name": "com.cesce.standalone.util.identificacionmasiva",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESRATING"
+				},
+				"_name": "com.cesce.cover.scoring.controller.util.tamino",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCSVEXPERIAN"
+				},
+				"_name": "com.cesce.sds.util.UtilidadesSds",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESGENFICHERO"
+				},
+				"_name": "com.cesce.standalone.util.generacionficheros",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCSVFACTORESRIESGO"
+				},
+				"_name": "UtilidadesSdsFR",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESUNICO"
+				},
+				"_name": "com.cesce.sds.util.fuentes.SdsFuenteUnicoDatos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCERTIFICACION"
+				},
+				"_name": "com.cesce.certificados.controller.util.LlamadaMotorCertificacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESUNICO"
+				},
+				"_name": "com.cesce.sds.util.fuentes.SdsFuenteUnicoBalance",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESUNICO"
+				},
+				"_name": "LOG_DICCIONARIO_UNICO",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "AXIS"
+				},
+				"_name": "org.apache.axis",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "CATALINA"
+				},
+				"_name": "org.apache.catalina",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "JASPER"
+				},
+				"_name": "org.apache.jasper.servlet",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "error"
+				},
+				"appender-ref": {
+					"_ref": "SCORINGJSONADAPTER"
+				},
+				"_name": "com.cesce.scoringjsonadapter",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILESCAS"
+				},
+				"_name": "org.jasig",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "ACCESOSISNET"
+				},
+				"_name": "com.cesce.sisnet",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "info"
+			},
+			"appender-ref": {
+				"_ref": "FILEARQUITEC"
+			}
+		}
+	}
+}

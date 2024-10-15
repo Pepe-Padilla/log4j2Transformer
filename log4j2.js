@@ -14,17 +14,36 @@ function calculate(){
     for(let append of l4j.configuration.appender) {
         console.log(append);
         var aName = append._name;
-        var aFileMod = append.rollingPolicy.param._value;
-        var aFile = aFileMod.split(".log.")[0] + ".log";
+        var aFileMod = "";
+        var aFile = "";
+        if(append.rollingPolicy) {
+            aFileMod = append.rollingPolicy.param._value;
+            aFile = aFileMod.split(".log.")[0] + ".log";
+        } else if(append.param && Array.isArray(append.param)) {
+            var datePattern = "yyyy-MM-dd"; //default
+            for(var i=0;i<append.param.length;i++) {
+                var paramI = append.param[i];
+                switch(paramI._name) {
+                    case "File":
+                        aFile = paramI._value;
+                        break;
+                    case "DatePattern":
+                        datePattern = paramI._value;
+                        break;
+                }
+            }
+            aFileMod = aFile + ".%d{"+datePattern+"}"; 
+        } else {
+            console.error("appender format not know");
+            return;
+        }
         var aLayout = append.layout.param._value;
 
         appenders.push(`    <!-- Appender: ${aName} -->`);
         appenders.push(`    <RollingFile name="${aName}" fileName="${aFile}" filePattern="${aFileMod}">`);
-        appenders.push(`      <PatternLayout>`);
-        appenders.push(`        <Pattern>${aLayout}</Pattern>`);
-        appenders.push(`      </PatternLayout>`);
+        appenders.push(`      <PatternLayout pattern="${aLayout}" />`);
         appenders.push(`      <Policies>`);
-        appenders.push(`        <TimeBasedTriggeringPolicy />`);
+        appenders.push(`        <TimeBasedTriggeringPolicy  interval="1" modulate="true" />`);
         appenders.push(`      </Policies>`);
         appenders.push(`    </RollingFile>`);
         appenders.push("");
@@ -45,7 +64,15 @@ function calculate(){
     }
 
     roots=[];
-    for(let r of l4j.configuration.root) {
+    if(Array.isArray(l4j.configuration.root)) {
+        for(let r of l4j.configuration.root) {
+            console.log(r);
+            var rLevel = r.level._value;
+            var rRef = r["appender-ref"]._ref;
+            roots.push(`      <AppenderRef ref="${rRef}" level="${rLevel}"/>`);
+        }
+    } else {
+        var r = l4j.configuration.root;
         console.log(r);
         var rLevel = r.level._value;
         var rRef = r["appender-ref"]._ref;
@@ -74,7 +101,7 @@ function calculate(){
     restult.push('</Configuration>');
 
     var text = restult.join("\n");
-    const filename = "log4j.xml";
+    const filename = "log4j2.xml";
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
     element.setAttribute('download', filename);

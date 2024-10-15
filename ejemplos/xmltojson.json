@@ -1,0 +1,2590 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_arquitecturaRiesgosStandalone.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEARQUITEC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_logDiccionarioUnico.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESUNICO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorpo.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORPO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorpo_2.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORPO_2",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorpo_3.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORPO_3",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorpo_4.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORPO_4",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorgtSdsAdmYSeg.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORGT",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorgtpiSdsAdmYSeg.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORGTPI",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_1_lanzadorcargamasiva.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORCARGAMASIVA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEPROCESAOPERACIONES",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_csvExperianSdsAdmYSeg.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCSVEXPERIANSDS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_logExperianSdsAdmYSeg.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEEXPERIAN",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_2_gestiontareas.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEGESTIONTAREAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_2_gestiontareaspdtesinf.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEGESTIONTAREASPDTESINF",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_csvFactorRiesgoSdsAdmYSeg.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCSVFACTORESRIESGO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_3_cargamasiva.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCARGAMASIVA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_1_lanzadorSimulacionCarteras.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORSIMULACIONCARTERAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasMulti.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILETRATAMIENTOMULTI",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasColombia.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_COLOMBIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasEspana.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_ESPANA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasFrancia.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_FRANCIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasLatam.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_LATAM",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasMexico.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_MEXICO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasBrasil.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_BRASIL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasChile.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_CHILE",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasPeru.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_PERU",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasPortugal.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_PORTUGAL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_tratamientoCarterasNuevasGRS.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_TRATAMIENTO_GRS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoMulti.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESIMULACIONCARTERASMULTI",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoColombia.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_COLOMBIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoEspana.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_ESPANA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoFrancia.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_FRANCIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoLatam.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_LATAM",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoMexico.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_MEXICO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoBrasil.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_BRASIL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoChile.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_CHILE",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoPeru.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_PERU",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoPortugal.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_PORTUGAL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_simulacionFactorRiesgoGRS.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_SIMULACION_CARTERAS_GRS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_informesCarterasMulti.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESIMULACIONINFORMES",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaColombia.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_COLOMBIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaEspana.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_ESPANA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaFrancia.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_FRANCIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaLatam.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_LATAM",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaMexico.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_MEXICO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaBrasil.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_BRASIL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaChile.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_CHILE",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaPeru.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_PERU",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SimulacionCarteras_calculoFranquiciaPortugal.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILE_CALCULO_FRANQUICIA_PORTUGAL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_calculoRecargos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECALCULORECARGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_FlujoSds.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEFLUJOSDS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_lanzadorsimulacion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORSIM",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_lanzadorprocesasimulacion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORPROCESASIM",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_simulacion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESIMULACIONSIMU",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_procesasimulacion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEPROCESASIMULACION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_csvExperianCarteras.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILESCSVEXPERIANSIMU",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SVACobros_RegistroFicheroProspecta.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEREGISTROFICHEROPROSPECTA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SVACobros_CalculaFicheroProspecta.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECALCULAFICHEROPROSPECTA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SVACobros_GeneraFicheroProspecta.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEGENERAFICHEROPROSPECTA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SVACobros_1_lanzadorSVACobros.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORSVACOBROS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_DiccionarioUnico.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "DICCIONARIOUNICO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Hilo_RevisionesAsegurado.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEHILOHILOREVISIONESASEGURADO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Lanzador_Hilo_RevisionesAsegurado.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORHILOREVISIONESASEGURADO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_4_TareasPdtesRevision.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEHILOTAREASPDTESRESOL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Lanzador_Hilo_TareasPdtResolucion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORHILOTAREASPDTESRESOL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_5_CarterasPPC.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEHILOCARTERASPPC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Lanzador_Hilo_ObtenerCarteraPPC.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORHILOCARTERASPPC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_4_TareasPdtesRevisionPPC.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEHILOTAREASPDTESRESOLPPC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Lanzador_Hilo_TareasPdtResolucionPPC.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORHILOTAREASPDTESRESOLPPC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_6_Traza31.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEHILOTRAZA31",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Lanzador_Hilo_Traza31.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORHILOTRAZA31",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_SdsAdmYSeg_7_CarteraTraza31.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEHILOCARTERATRAZA31",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_Lanzador_Hilo_CarteraTraza31.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORHILOCARTERATRAZA31",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_InformeColombiaOffLine.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEINFORMEOFFLINECOLOMBIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_InformeColombiaOffLinePeticion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEINFORMEOFFLINECOLOMBIAPETICION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_InformeColombiaOffLineRecepcion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEINFORMEOFFLINECOLOMBIARECEPCION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_TareasNoFinalizadas.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEGESTIONTAREASNOFINALIZADAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_ConvertirCSVaExcel.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECONVERTIRCSVAEXCEL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_ConvertirCSVaExcelNoMotor.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECONVERTIRCSVAEXCELNOMOTOR",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_ConvertirExcelaCSV.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECONVERTIREXCELACSV",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_scoringJsonAdapter.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "SCORINGJSONADAPTER",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_reportsJPAService.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEREPORTJPA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/RS_MailClasificaciones.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEMAILCLASIFICACIONES",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILEREPORTJPA"
+				},
+				"_name": "com.cesce.reports",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILEREGISTROFICHEROPROSPECTA"
+				},
+				"_name": "com.cesce.svacobros.standalone.RegistroFicheroProspecta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILECALCULAFICHEROPROSPECTA"
+				},
+				"_name": "com.cesce.svacobros.standalone.CalculaFicheroProspecta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILEGENERAFICHEROPROSPECTA"
+				},
+				"_name": "com.cesce.svacobros.standalone.GeneraFicheroProspecta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONERegistroFicheroProspecta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONERegistroFicheroProspecta1",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONERegistroFicheroProspecta2",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONERegistroFicheroProspecta3",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONERegistroFicheroProspecta4",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONERegistroFicheroProspecta5",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSVACOBROS"
+				},
+				"_name": "RIESGOSSTANDALONEGeneraFicheroProspecta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCSVEXPERIANSIMU"
+				},
+				"_name": "com.cesce.sds.util.UtilidadesSds",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasEspana",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasEspanaDos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasEspanaTres",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasEspanaCuatro",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasEspanaCinco",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasFrancia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasPortugal",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasPortugalDos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasMexico",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasColombia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasLatam",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasBrasil",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasChile",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasPeru",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIMULACIONCARTERAS"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaDatosInformes",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILETRATAMIENTOMULTI"
+				},
+				"_name": "com.cesce.carterasnuevasMultipais.standalone.tratamiento.controller.TratamientoCarterasNuevas",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_COLOMBIA"
+				},
+				"_name": "TratamientoCarterasNuevasColombia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_ESPANA"
+				},
+				"_name": "TratamientoCarterasNuevasEspana",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_FRANCIA"
+				},
+				"_name": "TratamientoCarterasNuevasFrancia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_LATAM"
+				},
+				"_name": "TratamientoCarterasNuevasLatam",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_MEXICO"
+				},
+				"_name": "TratamientoCarterasNuevasMexico",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_BRASIL"
+				},
+				"_name": "TratamientoCarterasNuevasBrasil",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_CHILE"
+				},
+				"_name": "TratamientoCarterasNuevasChile",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_PERU"
+				},
+				"_name": "TratamientoCarterasNuevasPeru",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_PORTUGAL"
+				},
+				"_name": "TratamientoCarterasNuevasPortugal",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_TRATAMIENTO_GRS"
+				},
+				"_name": "TratamientoCarterasNuevasGRS",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILESIMULACIONCARTERASMULTI"
+				},
+				"_name": "com.cesce.carterasnuevasMultipais.standalone.simulacion.controller.SimulacionFactorRiesgo",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_COLOMBIA"
+				},
+				"_name": "SimulacionFactorRiesgoColombia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_ESPANA"
+				},
+				"_name": "SimulacionFactorRiesgoEspana",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_FRANCIA"
+				},
+				"_name": "SimulacionFactorRiesgoFrancia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_LATAM"
+				},
+				"_name": "SimulacionFactorRiesgoLatam",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_MEXICO"
+				},
+				"_name": "SimulacionFactorRiesgoMexico",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_BRASIL"
+				},
+				"_name": "SimulacionFactorRiesgoBrasil",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_CHILE"
+				},
+				"_name": "SimulacionFactorRiesgoChile",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_PERU"
+				},
+				"_name": "SimulacionFactorRiesgoPeru",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_PORTUGAL"
+				},
+				"_name": "SimulacionFactorRiesgoPortugal",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_SIMULACION_CARTERAS_GRS"
+				},
+				"_name": "SimulacionFactorRiesgoGRS",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESIMULACIONINFORMES"
+				},
+				"_name": "com.cesce.carterasnuevasMultipais.standalone.informeCartera.controller.InformeCartera",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_COLOMBIA"
+				},
+				"_name": "CalculoFranquiciaColombia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_ESPANA"
+				},
+				"_name": "CalculoFranquiciaEspana",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_FRANCIA"
+				},
+				"_name": "CalculoFranquiciaFrancia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_LATAM"
+				},
+				"_name": "CalculoFranquiciaLatam",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_MEXICO"
+				},
+				"_name": "CalculoFranquiciaMexico",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_BRASIL"
+				},
+				"_name": "CalculoFranquiciaBrasil",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_CHILE"
+				},
+				"_name": "CalculoFranquiciaChile",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_PERU"
+				},
+				"_name": "CalculoFranquiciaPeru",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILE_CALCULO_FRANQUICIA_PORTUGAL"
+				},
+				"_name": "CalculoFranquiciaPortugal",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILECALCULORECARGOS"
+				},
+				"_name": "com.cesce.calculoRecargos.standalone",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEFLUJOSDS"
+				},
+				"_name": "com.cesce.sds.util.FlujoSds",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEFLUJOSDS"
+				},
+				"_name": "com.cesce.serasa",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEFLUJOSDS"
+				},
+				"_name": "com.cesce.arquitectura.adapter.ediwin",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORSIM"
+				},
+				"_name": "RIESGOSSTANDALONEScoringSimulacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORPROCESASIM"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaSimulacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESIMULACIONSIMU"
+				},
+				"_name": "com.cesce.general.identificacion.controller.util",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESIMULACIONSIMU"
+				},
+				"_name": "com.cesce.simulacion.standalone.ScoringSimulacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEPROCESASIMULACION"
+				},
+				"_name": "com.cesce.simulacion.standalone.ProcesaSimulacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEEXPERIAN"
+				},
+				"_name": "com.experian",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCSVEXPERIANSDS"
+				},
+				"_name": "com.cesce.sds.util.UtilidadesSds",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCARGAMASIVA"
+				},
+				"_name": "com.cesce.standalone.util.cargamasiva",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORCARGAMASIVA"
+				},
+				"_name": "com.cesce.standalone.lanzador.LanzadorCargaMasiva",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORPO"
+				},
+				"_name": "RIESGOSSTANDALONEStandalonePO",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORPO_2"
+				},
+				"_name": "RIESGOSSTANDALONEStandalonePO_2",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORPO_3"
+				},
+				"_name": "RIESGOSSTANDALONEStandalonePO_3",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORPO_4"
+				},
+				"_name": "RIESGOSSTANDALONEStandalonePO_4",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORGT"
+				},
+				"_name": "RIESGOSSTANDALONEStandaloneGT",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORGTPI"
+				},
+				"_name": "RIESGOSSTANDALONEStandaloneGTP",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEPROCESAOPERACIONES"
+				},
+				"_name": "com.cesce.sds",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEGESTIONTAREAS"
+				},
+				"_name": "com.cesce.sds.standalone.GestionTareas",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEGESTIONTAREASPDTESINF"
+				},
+				"_name": "com.cesce.sds.standalone.GestionTareasPdtesInformacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEARQUITEC"
+				},
+				"_name": "com.cesce",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESCSVFACTORESRIESGO"
+				},
+				"_name": "UtilidadesSdsFR",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESUNICO"
+				},
+				"_name": "com.cesce.sds.util.fuentes.SdsFuenteUnicoDatos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILESUNICO"
+				},
+				"_name": "com.cesce.sds.util.fuentes.SdsFuenteUnicoBalance",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "DICCIONARIOUNICO"
+				},
+				"_name": "com.cesce.sds.model.DAORecuperaDatosDiccionario",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORHILOREVISIONESASEGURADO"
+				},
+				"_name": "RIESGOSSTANDALONEHiloRevisionesAsegurado",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEHILOHILOREVISIONESASEGURADO"
+				},
+				"_name": "com.cesce.sds.standalone.RevisionesAsegurado",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORHILOTAREASPDTESRESOL"
+				},
+				"_name": "RIESGOSSTANDALONEGestionTareasPdtesResolucion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEHILOTAREASPDTESRESOL"
+				},
+				"_name": "com.cesce.sds.standalone.GestionTareasPdtesResolucion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORHILOCARTERASPPC"
+				},
+				"_name": "RIESGOSSTANDALONEObtenerCarterasPPC",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEHILOCARTERASPPC"
+				},
+				"_name": "com.cesce.sds.standalone.ObtenerCarteraPPC",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORHILOTAREASPDTESRESOLPPC"
+				},
+				"_name": "RIESGOSSTANDALONEGestionTareasPdtesResolucionPPC",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEHILOTAREASPDTESRESOLPPC"
+				},
+				"_name": "com.cesce.sds.standalone.GestionTareasPdtesResolucionPPC",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORHILOTRAZA31"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaTareasTraza31",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEHILOTRAZA31"
+				},
+				"_name": "com.cesce.sds.standalone.ProcesaTareasTraza31",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORHILOCARTERATRAZA31"
+				},
+				"_name": "RIESGOSSTANDALONEProcesaCarterasTraza31",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEHILOCARTERATRAZA31"
+				},
+				"_name": "com.cesce.sds.standalone.ProcesaCarterasTraza31",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEINFORMEOFFLINECOLOMBIA"
+				},
+				"_name": "RIESGOSSTANDALONEInformeOffLineColombia",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEINFORMEOFFLINECOLOMBIAPETICION"
+				},
+				"_name": "RIESGOSSTANDALONEInformeOffLineColombiaPeticion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEINFORMEOFFLINECOLOMBIARECEPCION"
+				},
+				"_name": "RIESGOSSTANDALONEInformeOffLineColombiaRecepcion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEFLUJOSDS"
+				},
+				"_name": "LOG_SCORING",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEGESTIONTAREASNOFINALIZADAS"
+				},
+				"_name": "RIESGOSSTANDALONEGestionTareasNoFinalizadas",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILECONVERTIRCSVAEXCEL"
+				},
+				"_name": "RIESGOSSTANDALONEConvertirCSVaExcel",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILECONVERTIRCSVAEXCELNOMOTOR"
+				},
+				"_name": "RIESGOSSTANDALONEConvertirCSVaExcelNoMotor",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILECONVERTIREXCELACSV"
+				},
+				"_name": "RIESGOSSTANDALONEConvertirExcelaCSV",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "error"
+				},
+				"appender-ref": {
+					"_ref": "SCORINGJSONADAPTER"
+				},
+				"_name": "com.cesce.scoringjsonadapter",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEMAILCLASIFICACIONES"
+				},
+				"_name": "RIESGOSSTANDALONEMailClasificaciones",
+				"_additivity": "false"
+			}
+		],
+		"root": [{
+			"level": {
+				"_value": "INFO"
+			},
+			"appender-ref": {
+				"_ref": "FILEARQUITEC"
+			}
+		}]
+	}
+}

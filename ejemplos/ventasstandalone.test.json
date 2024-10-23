@@ -1,0 +1,25 @@
+{
+	"configuration": {
+		"appender": [{
+			"layout": {
+				"param": {
+					"_name": "ConversionPattern",
+					"_value": "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+				},
+				"_class": "org.apache.log4j.PatternLayout"
+			},
+			"_name": "console",
+			"_class": "org.apache.log4j.ConsoleAppender"
+		}],
+		"root": {
+			"level": {
+				"_value": "OFF"
+			},
+			"appender-ref": {
+				"_ref": "console"
+			}
+		},
+		"_xmlns:log4j": "http://jakarta.apache.org/log4j/",
+		"_debug": "false"
+	}
+}

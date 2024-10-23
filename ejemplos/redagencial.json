@@ -1,0 +1,100 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/REDAGENCIAL_lanzador.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADOR",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/REDAGENCIAL_ftp.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECARPETA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/REDAGENCIAL_ascentCapture.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECAPTURE",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "WARN"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADOR"
+				},
+				"_name": "com.cesce.standalone.lanzador.LanzadorStandalone",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILECARPETA"
+				},
+				"_name": "com.cesce.infoespontanea.standalone.carpeta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "FILECAPTURE"
+				},
+				"_name": "com.cesce.infoespontanea.standalone.capture",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "warn"
+			},
+			"appender-ref": {
+				"_ref": "FILELANZADOR"
+			}
+		}
+	}
+}

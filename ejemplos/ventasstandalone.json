@@ -1,0 +1,300 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_consola.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "consola",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasAlta.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEALTA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasRegistro.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEREGISTRO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasProcesamiento.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEPROCESAMIENTO",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasNotifica.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEFTPNOTIFICA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasLanzadorStandalone.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADOR",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasTraspasosPolizas.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILETRASPASOSPOLVENTAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasArquitectura.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEARQUITECTURA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/VS_ventasTransmisionVentasHost.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILETRANSMISIONVENTAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "WARN"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILELANZADOR"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.standalone.lanzador.LanzadorGenericoExtendidoVentas",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "WARN"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILEALTA"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.ventas.standalone.alta",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "WARN"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILEREGISTRO"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.ventas.standalone.registro",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "WARN"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILEPROCESAMIENTO"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.ventas.standalone.procesamiento",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "WARN"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILEFTPNOTIFICA"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.ventas.standalone.procesoftpnotifica",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILETRASPASOSPOLVENTAS"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.polizasventas.standalone.traspasos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "ALL"
+				},
+				"appender-ref": {
+					"_ref": "consola"
+				},
+				"_name": "com.cesce.pruebas"
+			},
+			{
+				"level": {
+					"_value": "ALL"
+				},
+				"appender-ref": {
+					"_ref": "consola"
+				},
+				"_name": "com.cesce.ventas.standalone.common"
+			},
+			{
+				"level": {
+					"_value": "ALL"
+				},
+				"appender-ref": [
+					{
+						"_ref": "FILETRANSMISIONVENTAS"
+					},
+					{
+						"_ref": "consola"
+					}
+				],
+				"_name": "com.cesce.ventas.standalone.envioHost"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "warn"
+			},
+			"appender-ref": {
+				"_ref": "FILEARQUITECTURA"
+			}
+		}
+	}
+}

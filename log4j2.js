@@ -33,6 +33,10 @@ function calculate(){
                 }
             }
             aFileMod = aFile + ".%d{"+datePattern+"}"; 
+        } else if(append._name.toLowerCase() == "console") { 
+            appenders.push("<!-- Put the console manualy here (Example: https://mkyong.com/logging/log4j2-xml-example/) -->");
+            appenders.push("");
+            continue;
         } else {
             console.error("appender format not know");
             return;
@@ -50,15 +54,28 @@ function calculate(){
     }
 
     loggers = [];
+    if(l4j.configuration.logger)
     for(let log of l4j.configuration.logger) {
         console.log(log);
         var lLevel = log.level._value;
+        if(lLevel.toLowerCase() == "all") {lLevel = "debug"};
+        if(lLevel.toLowerCase() == "off") {lLevel = "fatal"};
         var lName = log._name;
-        var lAppender = log["appender-ref"]._ref;
-        var lAdditivity = log._additivity;
+        var lAppender = [];
+        if(Array.isArray(log["appender-ref"])) {
+            log["appender-ref"].forEach(element => {
+                lAppender.push(element._ref);
+            }); 
+        } else {
+            lAppender.push(log["appender-ref"]._ref);
+        }
+        var lAdditivity = "";
+        if(log._additivity) lAdditivity = 'additivity="'+log._additivity+'"';
         loggers.push(`    <!-- Logger: ${lName} -->`);
-        loggers.push(`    <Logger name="${lName}" level="${lLevel}" additivity="${lAdditivity}">`);
-        loggers.push(`      <AppenderRef ref="${lAppender}" />`);
+        loggers.push(`    <Logger name="${lName}" level="${lLevel}" ${lAdditivity} >`);
+        lAppender.forEach(lapp => {
+            loggers.push(`      <AppenderRef ref="${lapp}" />`);
+        });
         loggers.push(`    </Logger>`);
         loggers.push("");
     }

@@ -1,0 +1,69 @@
+{
+	"configuration": {
+		"appender": [{
+			"param": [
+				{
+					"_name": "Threshold",
+					"_value": "ALL"
+				},
+				{
+					"_name": "File",
+					"_value": "${catalina.home}/logs/invesdocWS.log"
+				},
+				{
+					"_name": "Append",
+					"_value": "true"
+				},
+				{
+					"_name": "ImmediateFlush",
+					"_value": "true"
+				},
+				{
+					"_name": "DatePattern",
+					"_value": "'.'yyyy-MM-dd"
+				}
+			],
+			"layout": {
+				"param": {
+					"_name": "ConversionPattern",
+					"_value": "%d %-5p [%C](%F:%M) - %m%n"
+				},
+				"_class": "org.apache.log4j.PatternLayout"
+			},
+			"_name": "INVESDOC",
+			"_class": "org.apache.log4j.DailyRollingFileAppender"
+		}],
+		"logger": [
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "INVESDOC"
+				},
+				"_name": "com.cesce.cliente.invesdoc.ws",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "INVESDOC"
+				},
+				"_name": "es.ieci.tecdoc.invesdoc.ws",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "INVESDOC"
+				},
+				"_name": "es.invesdoc.ws.eimpresion",
+				"_additivity": "false"
+			}
+		]
+	}
+}

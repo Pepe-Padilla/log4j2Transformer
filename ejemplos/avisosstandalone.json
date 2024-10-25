@@ -1,0 +1,268 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_arquitectura.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEARQUITEC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_ventasSobreRiesgos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEAVISOSVENTASSOBRERIESGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_1_lanVentasSobreRiesgos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORAVISOSVENTASSOBRERIESGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_envioMailAvisosRiesgos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEENVIOMAILAVISOSRIESGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_1_lanEnvioMailAvisosRiesgos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORENVIOMAILAVISOSRIESGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_envioSMSAvisosRiesgos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEENVIOSMSAVISOSRIESGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_1_lanEnvioSMSAvisosRiesgos.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORENVIOSMSAVISOSRIESGOS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_tratamientoErroneasEncuestadas.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILETRATAMIENTOERRONEASENCUESTADAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AVISOSS_1_lantraErrEnc.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILELANZADORTRATAMIENTOERRONEASENCUESTADAS",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEAVISOSVENTASSOBRERIESGOS"
+				},
+				"_name": "com.cesce.avisos.standalone.controller.HiloAvisosVentasSobreRiesgos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORAVISOSVENTASSOBRERIESGOS"
+				},
+				"_name": "AVISOSSTANDALONEHiloAvisosVentasSobreRiesgos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEENVIOMAILAVISOSRIESGOS"
+				},
+				"_name": "com.cesce.avisos.standalone.controller.HiloEnvioMailAvisosRiesgos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORENVIOMAILAVISOSRIESGOS"
+				},
+				"_name": "AVISOSSTANDALONEHiloEnvioMailAvisosRiesgos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEENVIOSMSAVISOSRIESGOS"
+				},
+				"_name": "com.cesce.avisos.standalone.controller.HiloEnvioSMSAvisosRiesgos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILEENVIOSMSAVISOSRIESGOS"
+				},
+				"_name": "es.telefonica.www.MI.InterfazSimplificado.definitions.MIInterfazSimplificadoStub",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORENVIOSMSAVISOSRIESGOS"
+				},
+				"_name": "AVISOSSTANDALONEHiloEnvioSMSAvisosRiesgos",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILETRATAMIENTOERRONEASENCUESTADAS"
+				},
+				"_name": "com.cesce.avisos.standalone.controller.HiloTratamientoErroneasEncuestadas",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "FILELANZADORTRATAMIENTOERRONEASENCUESTADAS"
+				},
+				"_name": "AVISOSSTANDALONEHiloTratamientoErroneasEncuestadas",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "INFO"
+			},
+			"appender-ref": {
+				"_ref": "FILEARQUITEC"
+			}
+		}
+	}
+}

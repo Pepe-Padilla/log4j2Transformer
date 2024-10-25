@@ -88,12 +88,15 @@ function calculate(){
             var rRef = r["appender-ref"]._ref;
             roots.push(`      <AppenderRef ref="${rRef}" level="${rLevel}"/>`);
         }
-    } else {
+    } else if(l4j.configuration.root) {
         var r = l4j.configuration.root;
         console.log(r);
         var rLevel = r.level._value;
         var rRef = r["appender-ref"]._ref;
         roots.push(`      <AppenderRef ref="${rRef}" level="${rLevel}"/>`);
+    } else {
+        console.warn("no root informed");
+        roots.push(`      <!-- No Root Informed -->`);
     }
 
     //resultado final

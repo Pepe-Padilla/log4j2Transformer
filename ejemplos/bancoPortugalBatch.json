@@ -1,0 +1,110 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/TratarRespuestaBPortugal_auditoria.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "AUDITORIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/TratarRespuestaBPortugal.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "TratarRespuestaBPortugal_LOGFILE",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/TratarRespuestaBPortugal_auditoriaNegocio.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "auditoriaNegocio",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "AUDITORIA"
+				},
+				"_name": "com.indra.jee.arq.cam.core.auditoria.Auditable",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "auditoriaNegocio"
+				},
+				"_name": "com.indra.jee.arq.cam.core.interceptors",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "TratarRespuestaBPortugal_LOGFILE"
+				},
+				"_name": "com.cesce.batch.facturacion.items.TratamientoTratarRespuestaBPortugal",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "TratarRespuestaBPortugal_LOGFILE"
+				},
+				"_name": "com.cesce.batch.facturacion.lanzador.LanzadorTratarRespuestaBPortugal",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "INFO"
+			},
+			"appender-ref": {
+				"_ref": "TratarRespuestaBPortugal_LOGFILE"
+			}
+		}
+	}
+}

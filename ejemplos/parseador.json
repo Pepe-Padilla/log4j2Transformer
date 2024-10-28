@@ -1,0 +1,184 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/PARSEADOR.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEPARSEADOR",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/PARSEADOR_LanzadorStandalone.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEGENERAL",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/PARSEADOR_modifUnif.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEMODIFUNIF",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/PARSEADOR_comprobarErrores.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILECOMPRUEBRERR",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/PARSEADOR_reprocesarErrores.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEREPROERR",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/PARSEADOR_reportsJPAService.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEREPORTJPA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILEGENERAL"
+				},
+				"_name": "com.cesce.utilidades",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILEPARSEADOR"
+				},
+				"_name": "com.cesce.parseador",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILEMODIFUNIF"
+				},
+				"_name": "com.cesce.informes",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILECOMPRUEBRERR"
+				},
+				"_name": "com.cesce.parseador.ComprobarErroresParseador",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILEREPROERR"
+				},
+				"_name": "com.cesce.parseador.ReprocesaErroresParseador",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "info"
+				},
+				"appender-ref": {
+					"_ref": "FILEREPORTJPA"
+				},
+				"_name": "com.cesce.reports",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "info"
+			},
+			"appender-ref": {
+				"_ref": "FILEPARSEADOR"
+			}
+		}
+	}
+}

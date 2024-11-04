@@ -1,0 +1,100 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AuditoriaADMDMT_auditoria.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "AUDITORIA",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/CargaADMDMTBatch.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "CargaADMDMTBatch_LOGFILE",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/AuditoriaADMDMT_auditoriaNegocio.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "auditoriaNegocio",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "AUDITORIA"
+				},
+				"_name": "com.indra.jee.arq.cam.core.auditoria.Auditable",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "auditoriaNegocio"
+				},
+				"_name": "com.indra.jee.arq.cam.core.interceptors",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "INFO"
+				},
+				"appender-ref": {
+					"_ref": "CargaADMDMTBatch_LOGFILE"
+				},
+				"_name": "com.cesce.batch.cargaadmdmt",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "INFO"
+			},
+			"appender-ref": {
+				"_ref": "CargaADMDMTBatch_LOGFILE"
+			}
+		}
+	}
+}

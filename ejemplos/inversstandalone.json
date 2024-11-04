@@ -1,0 +1,344 @@
+{
+	"configuration": {
+		"appender": [
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_arquitectura.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FILEARQUITEC",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_ficheroFTP.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "FICHEROFTP",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_generaPeticion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "GENERAPETICION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_enviaPeticion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "ENVIAPETICION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_enviaPeticionImportacion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "ENVIAPETICIONIMPORTACION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_lanzadorCompruebaFTP.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "LANZADORINVESDOCOMPRUEBAFTP",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_lanzadorInvesDocEnviaPeticion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "LANZADORINVESDOCENVIAPETICION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_lanzadorGeneraPeticion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "LANZADORGENERAPETICION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_lanzadorInvesDocEnviaPeticionImportacion.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "LANZADORINVESDOCENVIAPETICIONIMPORTACION",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_clientProxyREST.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "INVESDOCCLIENTPROXYREST",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			},
+			{
+				"rollingPolicy": {
+					"param": {
+						"_name": "FileNamePattern",
+						"_value": "/opt/cesnet/ProcesosStandalone/logs/INVESDOC_controlVolumenes.log.%d{yyyy-MM-dd}"
+					},
+					"_class": "org.apache.log4j.rolling.TimeBasedRollingPolicy"
+				},
+				"layout": {
+					"param": {
+						"_name": "ConversionPattern",
+						"_value": "%d %-5p [%C{1}] - %m%n"
+					},
+					"_class": "org.apache.log4j.PatternLayout"
+				},
+				"_name": "CONTROLVOLUMENES",
+				"_class": "org.apache.log4j.rolling.RollingFileAppender"
+			}
+		],
+		"logger": [
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "ENVIAPETICIONIMPORTACION"
+				},
+				"_name": "com.cesce.invesdoc.standalone.enviaPeticionImportacion.controller.EnviaPeticionImportacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FICHEROFTP"
+				},
+				"_name": "com.cesce.invesdoc.standalone.ficheroFTP.controller.CompruebaFTP",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "GENERAPETICION"
+				},
+				"_name": "com.cesce.invesdoc.standalone.generaPeticiones.controller.GeneraPeticiones",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "ENVIAPETICION"
+				},
+				"_name": "com.cesce.invesdoc.standalone.enviaPeticion.controller.EnviaPeticion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "DEBUG"
+				},
+				"appender-ref": {
+					"_ref": "LANZADORINVESDOCOMPRUEBAFTP"
+				},
+				"_name": "INVESDOCSTANDALONECompruebaFTP",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "LANZADORINVESDOCENVIAPETICION"
+				},
+				"_name": "INVESDOCSTANDALONEEnviaPeticion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "LANZADORGENERAPETICION"
+				},
+				"_name": "INVESDOCSTANDALONEGeneraPeticion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "LANZADORINVESDOCENVIAPETICIONIMPORTACION"
+				},
+				"_name": "INVESDOCSTANDALONEEnviaPeticionImportacion",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "INVESDOCCLIENTPROXYREST"
+				},
+				"_name": "com.cesce.client.rest.invesdocproxy",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "CONTROLVOLUMENES"
+				},
+				"_name": "com.cesce.invesdoc.standalone.controlVolumenes.controller.ControlVolumenes",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "debug"
+				},
+				"appender-ref": {
+					"_ref": "FILEARQUITEC"
+				},
+				"_name": "com.cesce",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "error"
+				},
+				"appender-ref": {
+					"_ref": "FILEARQUITEC"
+				},
+				"_name": "org",
+				"_additivity": "false"
+			},
+			{
+				"level": {
+					"_value": "error"
+				},
+				"appender-ref": {
+					"_ref": "FILEARQUITEC"
+				},
+				"_name": "javax",
+				"_additivity": "false"
+			}
+		],
+		"root": {
+			"level": {
+				"_value": "INFO"
+			},
+			"appender-ref": {
+				"_ref": "FILEARQUITEC"
+			}
+		}
+	}
+}
